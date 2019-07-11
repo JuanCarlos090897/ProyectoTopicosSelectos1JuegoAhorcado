@@ -1,0 +1,7 @@
+C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\bin\ProyectoAhorcadoWCF.dll.config
+C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\bin\ProyectoAhorcadoWCF.dll
+C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\bin\ProyectoAhorcadoWCF.pdb
+C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.dll
+C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.pdb

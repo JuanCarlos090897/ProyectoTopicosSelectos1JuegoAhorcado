@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9e58c156-0b81-43e4-a283-b61570726568" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:54647/WSPersonas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WSPersonas.xsd" MetadataType="Schema" ID="1579687e-dad3-4b84-a7a9-7cd164782d60" SourceId="1" SourceUrl="http://localhost:54647/WSPersonas.svc?xsd=xsd1" />
+    <MetadataFile FileName="WSPersonas1.xsd" MetadataType="Schema" ID="b39c87e6-9bb9-4c1a-9e24-87ee6c3b3945" SourceId="1" SourceUrl="http://localhost:54647/WSPersonas.svc?xsd=xsd0" />
+    <MetadataFile FileName="WSPersonas.wsdl" MetadataType="Wsdl" ID="2179f73c-0fd6-4811-a1f3-4e7dbbd64520" SourceId="1" SourceUrl="http://localhost:54647/WSPersonas.svc?wsdl" />
+    <MetadataFile FileName="WSPersonas2.xsd" MetadataType="Schema" ID="cbed1521-6c14-4171-826e-9eabc038b6d4" SourceId="1" SourceUrl="http://localhost:54647/WSPersonas.svc?xsd=xsd2" />
+    <MetadataFile FileName="WSPersonas.disco" MetadataType="Disco" ID="1789bca9-b06b-48b8-b2db-cd5f1226d96a" SourceId="1" SourceUrl="http://localhost:54647/WSPersonas.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
