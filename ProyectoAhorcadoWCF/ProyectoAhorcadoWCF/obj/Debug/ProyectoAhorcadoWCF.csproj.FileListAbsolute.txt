@@ -5,3 +5,9 @@ C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\Proye
 C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.dll
 C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.pdb
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\bin\ProyectoAhorcadoWCF.dll.config
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\bin\ProyectoAhorcadoWCF.dll
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\bin\ProyectoAhorcadoWCF.pdb
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.dll
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.pdb

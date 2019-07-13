@@ -73,6 +73,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Connected Services\WSPersonas\ClienteWS.WSPersonas.Listas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSPersonas\ClienteWS.WSPersonas.Persona.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>

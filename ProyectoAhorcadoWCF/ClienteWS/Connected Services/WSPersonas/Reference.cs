@@ -23,6 +23,12 @@ namespace ClienteWS.WSPersonas {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ErrorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MensajeRespuetaField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -30,6 +36,32 @@ namespace ClienteWS.WSPersonas {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Error {
+            get {
+                return this.ErrorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ErrorField, value) != true)) {
+                    this.ErrorField = value;
+                    this.RaisePropertyChanged("Error");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MensajeRespueta {
+            get {
+                return this.MensajeRespuetaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MensajeRespuetaField, value) != true)) {
+                    this.MensajeRespuetaField = value;
+                    this.RaisePropertyChanged("MensajeRespueta");
+                }
             }
         }
         
@@ -82,6 +114,67 @@ namespace ClienteWS.WSPersonas {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Listas", Namespace="http://schemas.datacontract.org/2004/07/ProyectoAhorcadoWCF")]
+    [System.SerializableAttribute()]
+    public partial class Listas : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int DificultadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PalabraDeLaListaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Dificultad {
+            get {
+                return this.DificultadField;
+            }
+            set {
+                if ((this.DificultadField.Equals(value) != true)) {
+                    this.DificultadField = value;
+                    this.RaisePropertyChanged("Dificultad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PalabraDeLaLista {
+            get {
+                return this.PalabraDeLaListaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PalabraDeLaListaField, value) != true)) {
+                    this.PalabraDeLaListaField = value;
+                    this.RaisePropertyChanged("PalabraDeLaLista");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WSPersonas.IWSPersonas")]
     public interface IWSPersonas {
@@ -91,6 +184,12 @@ namespace ClienteWS.WSPersonas {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWSPersonas/ObtenerPersona", ReplyAction="http://tempuri.org/IWSPersonas/ObtenerPersonaResponse")]
         System.Threading.Tasks.Task<ClienteWS.WSPersonas.Persona> ObtenerPersonaAsync(string Identificacion);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWSPersonas/ObtenerPalabra", ReplyAction="http://tempuri.org/IWSPersonas/ObtenerPalabraResponse")]
+        ClienteWS.WSPersonas.Listas ObtenerPalabra(string Dificultad);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWSPersonas/ObtenerPalabra", ReplyAction="http://tempuri.org/IWSPersonas/ObtenerPalabraResponse")]
+        System.Threading.Tasks.Task<ClienteWS.WSPersonas.Listas> ObtenerPalabraAsync(string Dificultad);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -126,6 +225,14 @@ namespace ClienteWS.WSPersonas {
         
         public System.Threading.Tasks.Task<ClienteWS.WSPersonas.Persona> ObtenerPersonaAsync(string Identificacion) {
             return base.Channel.ObtenerPersonaAsync(Identificacion);
+        }
+        
+        public ClienteWS.WSPersonas.Listas ObtenerPalabra(string Dificultad) {
+            return base.Channel.ObtenerPalabra(Dificultad);
+        }
+        
+        public System.Threading.Tasks.Task<ClienteWS.WSPersonas.Listas> ObtenerPalabraAsync(string Dificultad) {
+            return base.Channel.ObtenerPalabraAsync(Dificultad);
         }
     }
 }

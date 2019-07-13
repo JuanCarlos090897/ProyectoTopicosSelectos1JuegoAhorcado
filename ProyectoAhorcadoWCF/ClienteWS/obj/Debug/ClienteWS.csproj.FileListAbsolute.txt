@@ -8,3 +8,13 @@ C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.cspro
 C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.exe
 C:\Users\pc\source\repos\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.pdb
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\bin\Debug\ClienteWS.exe.config
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\bin\Debug\ClienteWS.exe
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\bin\Debug\ClienteWS.pdb
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.Form1.resources
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.Properties.Resources.resources
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.csproj.GenerateResource.cache
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.exe
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.pdb
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ClienteWS\obj\Debug\ClienteWS.csprojAssemblyReference.cache

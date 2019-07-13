@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -23,6 +24,8 @@ namespace ProyectoAhorcadoWCF
     {
         [OperationContract]
         Persona ObtenerPersona(String Identificacion);
+        [OperationContract]
+        Listas ObtenerPalabra(String Dificultad);
     }
     [DataContract]
     public class Persona : BaseRespuesta //lo que hago aqui es heredar de una clase de respuestas que la defino abajo
@@ -32,6 +35,21 @@ namespace ProyectoAhorcadoWCF
         [DataMember]
         public int Edad { get; set; }
     }
+
+
+
+
+    [DataContract]
+    public class Listas 
+    {
+        [DataMember]
+        public string PalabraDeLaLista { get; set; }
+        [DataMember]
+        public int Dificultad { get; set; }
+    }
+
+
+
     [DataContract]
     public class BaseRespuesta
     {

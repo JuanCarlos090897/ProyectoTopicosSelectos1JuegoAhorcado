@@ -13,16 +13,35 @@
   <wsdl:message name="IWSPersonas_ObtenerPersona_OutputMessage">
     <wsdl:part name="parameters" element="tns:ObtenerPersonaResponse" />
   </wsdl:message>
+  <wsdl:message name="IWSPersonas_ObtenerPalabra_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPalabra" />
+  </wsdl:message>
+  <wsdl:message name="IWSPersonas_ObtenerPalabra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPalabraResponse" />
+  </wsdl:message>
   <wsdl:portType name="IWSPersonas">
     <wsdl:operation name="ObtenerPersona">
       <wsdl:input wsaw:Action="http://tempuri.org/IWSPersonas/ObtenerPersona" message="tns:IWSPersonas_ObtenerPersona_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IWSPersonas/ObtenerPersonaResponse" message="tns:IWSPersonas_ObtenerPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPalabra">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSPersonas/ObtenerPalabra" message="tns:IWSPersonas_ObtenerPalabra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSPersonas/ObtenerPalabraResponse" message="tns:IWSPersonas_ObtenerPalabra_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IWSPersonas" type="tns:IWSPersonas">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="ObtenerPersona">
       <soap:operation soapAction="http://tempuri.org/IWSPersonas/ObtenerPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPalabra">
+      <soap:operation soapAction="http://tempuri.org/IWSPersonas/ObtenerPalabra" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

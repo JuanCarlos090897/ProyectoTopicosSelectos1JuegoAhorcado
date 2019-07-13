@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -27,5 +28,72 @@ namespace ProyectoAhorcadoWCF
                 return new Persona() { Error = "Error al encontrar esta identificacion" };
             }
         }
+
+
+
+
+
+
+
+
+
+
+        // Esto es para el proyecto
+
+
+
+        public Listas ObtenerPalabra(string Dificultad)
+        {
+
+            ArrayList ListaDePalabras = new ArrayList();
+
+            string Palabra = "";
+            int NumeroRandom = 0;
+            Random random = new Random(); // este va ser el nuemro random que voy a generar para escoger la palabra 
+
+            if (Dificultad == "Dificil")
+            {
+                ListaDePalabras.Add("arterioscleidosis");
+                ListaDePalabras.Add("caleidoscopio");
+                ListaDePalabras.Add("electrocardiograma");
+                ListaDePalabras.Add("otorrinaringologo");
+                ListaDePalabras.Add("electrodomestico");
+                ListaDePalabras.Add("aeropuerto");
+
+
+             //   return new Listas() {PalabraDeLaLista = "XXXX" };
+
+            }else if (Dificultad == "Medio")
+            {
+                ListaDePalabras.Add("siempre");
+                ListaDePalabras.Add("presidente");
+                ListaDePalabras.Add("ejemplo");
+                ListaDePalabras.Add("problemas");
+                ListaDePalabras.Add("seguridad");
+                ListaDePalabras.Add("internacional");
+
+            }
+            else if (Dificultad == "Facil")
+            {
+                ListaDePalabras.Add("uva");
+                ListaDePalabras.Add("gato");
+                ListaDePalabras.Add("perro");
+                ListaDePalabras.Add("zapato");
+                ListaDePalabras.Add("bolso");
+                ListaDePalabras.Add("pie");
+            }
+            else  // aqui deberia ir una respuesta de escoger dificultad 
+            {
+                
+            }
+
+            NumeroRandom = random.Next(0, 5); // Esto genera el numero random para obtener una palabra de las 6 que hay 
+          
+            Palabra = ListaDePalabras[NumeroRandom].ToString(); // aqui lo que hago es meter la palabra que se quedo con NuneroRamdom en una  variable
+
+
+            return new Listas() { PalabraDeLaLista = Palabra }; // aqui retorno un objeto listas con la palabra selecionada
+        }
+
     }
 }
