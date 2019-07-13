@@ -38,6 +38,8 @@
             this.lblExplicacionIntentos = new System.Windows.Forms.Label();
             this.lblConteoIntentos = new System.Windows.Forms.Label();
             this.lblAhorcado = new System.Windows.Forms.Label();
+            this.lblResultadoJuego = new System.Windows.Forms.Label();
+            this.btnEmpezarDeNuevo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbDificultad
@@ -134,12 +136,33 @@
             this.lblAhorcado.TabIndex = 12;
             this.lblAhorcado.Text = "Juego Ahorcado";
             // 
+            // lblResultadoJuego
+            // 
+            this.lblResultadoJuego.AutoSize = true;
+            this.lblResultadoJuego.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoJuego.Location = new System.Drawing.Point(129, 332);
+            this.lblResultadoJuego.Name = "lblResultadoJuego";
+            this.lblResultadoJuego.Size = new System.Drawing.Size(19, 25);
+            this.lblResultadoJuego.TabIndex = 13;
+            this.lblResultadoJuego.Text = ".";
+            // 
+            // btnEmpezarDeNuevo
+            // 
+            this.btnEmpezarDeNuevo.Location = new System.Drawing.Point(315, 319);
+            this.btnEmpezarDeNuevo.Name = "btnEmpezarDeNuevo";
+            this.btnEmpezarDeNuevo.Size = new System.Drawing.Size(110, 23);
+            this.btnEmpezarDeNuevo.TabIndex = 14;
+            this.btnEmpezarDeNuevo.Text = "Empezar de Nuevo";
+            this.btnEmpezarDeNuevo.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(437, 354);
+            this.ClientSize = new System.Drawing.Size(435, 382);
+            this.Controls.Add(this.btnEmpezarDeNuevo);
+            this.Controls.Add(this.lblResultadoJuego);
             this.Controls.Add(this.lblAhorcado);
             this.Controls.Add(this.lblConteoIntentos);
             this.Controls.Add(this.lblExplicacionIntentos);
@@ -169,6 +192,8 @@
         private System.Windows.Forms.Label lblExplicacionIntentos;
         private System.Windows.Forms.Label lblConteoIntentos;
         private System.Windows.Forms.Label lblAhorcado;
+        private System.Windows.Forms.Label lblResultadoJuego;
+        private System.Windows.Forms.Button btnEmpezarDeNuevo;
     }
 }
 

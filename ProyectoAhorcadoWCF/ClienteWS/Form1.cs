@@ -18,12 +18,14 @@ namespace ClienteWS
         public static string PalabraQueQueda; // esto lo que hace es guardar la pabra que queda para seguir revisando
         public static char[] ArregloPalabraX;
         public static string DificultadSelecionada;
+        public int Intentos = 0;
 
         public Form1()
         {
             InitializeComponent();
             btnIngresarLetra.Enabled = false;
             txtLetrasIngresar.Enabled = false;
+            btnEmpezarDeNuevo.Enabled = false;
             
         }
 
@@ -40,13 +42,49 @@ namespace ClienteWS
         private void btnIngresarLetra_Click(object sender, EventArgs e)
         {
             string palabraingresada = txtLetrasIngresar.Text;
+            bool ResultadoVerexisteLetra = false;
             if (txtLetrasIngresar.Text.Length == 1)
             {
-                VerExisteLetra(txtLetrasIngresar.Text);
+                ResultadoVerexisteLetra = VerExisteLetra(txtLetrasIngresar.Text); // aqui lo mando para que haga el metodo de fijarse y acomodar e igual me devulva true o false
                 txtLetrasIngresar.Text = "";
+                if (ResultadoVerexisteLetra == false)
+                {
+                    Intentos = Intentos - 1;
+                    lblConteoIntentos.Text = Intentos.ToString();
+                }
+                if(Intentos == 0)
+                {
+                    lblResultadoJuego.Text = "Has Perdido"; 
+                }
+                // falta hacer un metodo para ver si la palabra no tiene X en grande y si no tiene poner que ha ganado 
+                if(VerSiHayXs() == false)
+                {
+                    lblResultadoJuego.Text = "GANADOR";
+                }
+                if(VerSiHayXs() == false || Intentos == 0) // aqui es lo que hago cuando termina el juego ya sea que haya ganado o perdido 
+                {
+                    btnIngresarLetra.Enabled = false;
+                    txtLetrasIngresar.Enabled = false;
+                    btnEmpezarDeNuevo.Enabled = true;
+                }
+
             }
             
         }
+
+        public bool VerSiHayXs()
+        {
+            for(int i = 0; i< palabra.Length; i++)
+            {
+                if(ArregloPalabraX[i] == 'X')
+                {
+                    return true; // si aun hay X se devuelve true sino false
+                }
+
+            }
+            return false;
+        }
+
 
         private void btnSeleccionarDificultad_Click(object sender, EventArgs e)
         {
@@ -80,6 +118,21 @@ namespace ClienteWS
                 {
                     ArregloPalabraX[a] = 'X';
                 }
+
+                // aqui le voy a dar la cantidad de intentos 
+
+            if(DificultadSelecionada == "Dificil")
+                {
+                    Intentos = 3;
+                }else if (DificultadSelecionada == "Medio")
+                {
+                    Intentos = 4;
+                }
+                else
+                {
+                    Intentos = 5;
+                }
+                lblConteoIntentos.Text = Intentos.ToString();
             }
         }
 
