@@ -51,16 +51,17 @@ namespace ClienteWS
             bool ResultadoVerexisteLetra = false;
             if (txtLetrasIngresar.Text.Length == 1)
             {
-                if(EsVocal(txtLetrasIngresar.Text) == false || PonerConsonantes != 0 )// aqui entra cuando es una consonante 
+                if(EsVocal(txtLetrasIngresar.Text) == false && PonerConsonantes != 0 )// aqui entra cuando es una consonante y el contador de poner consonantes no sea 0
                 {
                     PonerConsonantes--;
+                    lblConteoConsonantesNecesarias.Text = PonerConsonantes.ToString();
                 }
                 if (PonerConsonantes ==0 && PonerVocal == 0) // esto es por si ya cumplio el limete establecido de consonantes que pueda poner la vocal
                 {
                     PonerVocal++;
                 }
 
-                if (EsVocal(txtLetrasIngresar.Text)==false || PonerVocal == 1 || ConteoVocales == 1 || ConteoConsonantes == 0)// osea si es false es porque la letra no es una vocal 
+                if (EsVocal(txtLetrasIngresar.Text)==false || PonerVocal == 1 || ConteoVocales == 1 && ConteoConsonantes == 0  || ConteoConsonantes == 0)// osea si es false es porque la letra no es una vocal 
                 {
                     if (EsVocal(txtLetrasIngresar.Text) == true) // aqui lo que hago es si lo que ingreso fue vocal que le de 0 hasta que meta la cantidad necesaria de consonantes
                     {
@@ -81,17 +82,21 @@ namespace ClienteWS
                         {
                             PonerConsonantes = 1;
                         }
-
+                        lblConteoConsonantesNecesarias.Text = PonerConsonantes.ToString();// solo revisar
 
                     }
                     
-                    ResultadoVerexisteLetra = VerExisteLetra(txtLetrasIngresar.Text); // aqui lo mando para que haga el metodo de fijarse y acomodar e igual me devulva true o false
+                        ResultadoVerexisteLetra = VerExisteLetra(txtLetrasIngresar.Text); // aqui lo mando para que haga el metodo de fijarse y acomodar e igual me devulva true o false
                     txtLetrasIngresar.Text = "";
-                    if (ResultadoVerexisteLetra == false)
+                    if (ResultadoVerexisteLetra == false) // esto es por si no existe la letra
                     {
                         Intentos = Intentos - 1;
                         lblConteoIntentos.Text = Intentos.ToString();
                     }
+                    //if (ResultadoVerexisteLetra == true)
+                    //{
+                    //    ConteoConsonantes--;
+                    //}
                     if (Intentos == 0)
                     {
                         lblResultadoJuego.Text = "Has Perdido";
@@ -107,11 +112,17 @@ namespace ClienteWS
                         txtLetrasIngresar.Enabled = false;
                         btnEmpezarDeNuevo.Enabled = true;
                     }
-                }else if (EsVocal(txtLetrasIngresar.Text) == true && PonerVocal == 0)
-                {
-
                 }
-                
+                if(ResultadoVerexisteLetra == true && ConteoConsonantes !=0)
+                {
+                    ConteoConsonantes--;
+                }
+
+
+                if (ConteoConsonantes == 0) // esto es por si solo quedan vocales para poner 
+                {
+                    lblConteoConsonantesNecesarias.Text = "0";
+                }
 
             }
             

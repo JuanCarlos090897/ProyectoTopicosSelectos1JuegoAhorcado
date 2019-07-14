@@ -11,3 +11,4 @@ C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorc
 C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.csproj.CoreCompileInputs.cache
 C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.dll
 C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.pdb
+C:\Users\pc\Documents\GitHub\ProyectoTopicosSelectos1JuegoAhorcado\ProyectoAhorcadoWCF\ProyectoAhorcadoWCF\obj\Debug\ProyectoAhorcadoWCF.csprojAssemblyReference.cache
