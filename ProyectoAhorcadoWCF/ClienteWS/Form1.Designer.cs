@@ -40,6 +40,8 @@
             this.lblAhorcado = new System.Windows.Forms.Label();
             this.lblResultadoJuego = new System.Windows.Forms.Label();
             this.btnEmpezarDeNuevo = new System.Windows.Forms.Button();
+            this.lblAnuncioConsonantesNecesarias = new System.Windows.Forms.Label();
+            this.lblConteoConsonantesNecesarias = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbDificultad
@@ -53,7 +55,7 @@
             // 
             // btnIngresarLetra
             // 
-            this.btnIngresarLetra.Location = new System.Drawing.Point(246, 194);
+            this.btnIngresarLetra.Location = new System.Drawing.Point(267, 192);
             this.btnIngresarLetra.Name = "btnIngresarLetra";
             this.btnIngresarLetra.Size = new System.Drawing.Size(92, 23);
             this.btnIngresarLetra.TabIndex = 4;
@@ -63,7 +65,7 @@
             // 
             // txtLetrasIngresar
             // 
-            this.txtLetrasIngresar.Location = new System.Drawing.Point(106, 194);
+            this.txtLetrasIngresar.Location = new System.Drawing.Point(105, 192);
             this.txtLetrasIngresar.Name = "txtLetrasIngresar";
             this.txtLetrasIngresar.Size = new System.Drawing.Size(100, 20);
             this.txtLetrasIngresar.TabIndex = 5;
@@ -110,7 +112,7 @@
             // lblExplicacionIntentos
             // 
             this.lblExplicacionIntentos.AutoSize = true;
-            this.lblExplicacionIntentos.Location = new System.Drawing.Point(75, 286);
+            this.lblExplicacionIntentos.Location = new System.Drawing.Point(71, 336);
             this.lblExplicacionIntentos.Name = "lblExplicacionIntentos";
             this.lblExplicacionIntentos.Size = new System.Drawing.Size(111, 13);
             this.lblExplicacionIntentos.TabIndex = 10;
@@ -120,7 +122,7 @@
             // 
             this.lblConteoIntentos.AutoSize = true;
             this.lblConteoIntentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConteoIntentos.Location = new System.Drawing.Point(192, 286);
+            this.lblConteoIntentos.Location = new System.Drawing.Point(188, 336);
             this.lblConteoIntentos.Name = "lblConteoIntentos";
             this.lblConteoIntentos.Size = new System.Drawing.Size(16, 16);
             this.lblConteoIntentos.TabIndex = 11;
@@ -140,7 +142,7 @@
             // 
             this.lblResultadoJuego.AutoSize = true;
             this.lblResultadoJuego.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultadoJuego.Location = new System.Drawing.Point(129, 332);
+            this.lblResultadoJuego.Location = new System.Drawing.Point(100, 372);
             this.lblResultadoJuego.Name = "lblResultadoJuego";
             this.lblResultadoJuego.Size = new System.Drawing.Size(19, 25);
             this.lblResultadoJuego.TabIndex = 13;
@@ -148,19 +150,41 @@
             // 
             // btnEmpezarDeNuevo
             // 
-            this.btnEmpezarDeNuevo.Location = new System.Drawing.Point(315, 319);
+            this.btnEmpezarDeNuevo.Location = new System.Drawing.Point(301, 387);
             this.btnEmpezarDeNuevo.Name = "btnEmpezarDeNuevo";
             this.btnEmpezarDeNuevo.Size = new System.Drawing.Size(110, 23);
             this.btnEmpezarDeNuevo.TabIndex = 14;
             this.btnEmpezarDeNuevo.Text = "Empezar de Nuevo";
             this.btnEmpezarDeNuevo.UseVisualStyleBackColor = true;
+            this.btnEmpezarDeNuevo.Click += new System.EventHandler(this.btnEmpezarDeNuevo_Click);
+            // 
+            // lblAnuncioConsonantesNecesarias
+            // 
+            this.lblAnuncioConsonantesNecesarias.AutoSize = true;
+            this.lblAnuncioConsonantesNecesarias.Location = new System.Drawing.Point(71, 298);
+            this.lblAnuncioConsonantesNecesarias.Name = "lblAnuncioConsonantesNecesarias";
+            this.lblAnuncioConsonantesNecesarias.Size = new System.Drawing.Size(182, 13);
+            this.lblAnuncioConsonantesNecesarias.TabIndex = 15;
+            this.lblAnuncioConsonantesNecesarias.Text = "Contonantes Necesarias para vocal: ";
+            // 
+            // lblConteoConsonantesNecesarias
+            // 
+            this.lblConteoConsonantesNecesarias.AutoSize = true;
+            this.lblConteoConsonantesNecesarias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConteoConsonantesNecesarias.Location = new System.Drawing.Point(260, 298);
+            this.lblConteoConsonantesNecesarias.Name = "lblConteoConsonantesNecesarias";
+            this.lblConteoConsonantesNecesarias.Size = new System.Drawing.Size(16, 16);
+            this.lblConteoConsonantesNecesarias.TabIndex = 16;
+            this.lblConteoConsonantesNecesarias.Text = "0";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(435, 382);
+            this.ClientSize = new System.Drawing.Size(435, 432);
+            this.Controls.Add(this.lblConteoConsonantesNecesarias);
+            this.Controls.Add(this.lblAnuncioConsonantesNecesarias);
             this.Controls.Add(this.btnEmpezarDeNuevo);
             this.Controls.Add(this.lblResultadoJuego);
             this.Controls.Add(this.lblAhorcado);
@@ -194,6 +218,8 @@
         private System.Windows.Forms.Label lblAhorcado;
         private System.Windows.Forms.Label lblResultadoJuego;
         private System.Windows.Forms.Button btnEmpezarDeNuevo;
+        private System.Windows.Forms.Label lblAnuncioConsonantesNecesarias;
+        private System.Windows.Forms.Label lblConteoConsonantesNecesarias;
     }
 }
 
